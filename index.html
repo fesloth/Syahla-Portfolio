@@ -13,12 +13,13 @@
     <nav id="navbar" class="navbar"><a href="#"></a></nav>
     <div class="container">
       <div class="menu">
-        <a href="#welcome-section" class="menu-icon fas fa-home"></a>
-        <a href="#about" class="menu-icon fas fa-user"></a>
-        <a href="#projects" class="menu-icon fas fa-code"></a>
-        <a href="#experience" class="menu-icon fas fa-briefcase"></a>
-        <a href="#contact" class="menu-icon fas fa-envelope"></a>
-      </div>
+        <a href="#welcome-section" class="menu-icon fas fa-home" data-text="Home"></a>
+        <a href="#about" class="menu-icon fas fa-user" data-text="About"></a>
+        <a href="#projects" class="menu-icon fas fa-code" data-text="Projects"></a>
+        <a href="#sertif" class="menu-icon fas fa-medal" data-text="Certification"></a>
+        <a href="#experience" class="menu-icon fas fa-briefcase" data-text="Experience"></a>
+        <a href="#contact" class="menu-icon fas fa-envelope" data-text="Contact"></a>
+      </div>      
       <div class="portfolio">
         <section class="header">
           <img class="header-img" src="assets/profile.gif" />
@@ -30,93 +31,147 @@
           <div class="socials">
             <a href="https://twitter.com/nielvoff?s=20" target="_blank" class="fab fa-twitter" id="profile-link"></a>
             <a href="https://github.com/fesloth" target="_blank" class="fab fa-github"></a>
-            <a href="https://www.instagram.com/fesloth/" target="_blank" class="fab fa-instagram"></a>
-            <a href="https://open.spotify.com/user/31kmjiy5kpva6pqhsqlc7fxc4mmi?si=980c558f44044cad" target="_blank" class="fab fa-spotify"></a>
+            <a href="https://www.instagram.com/fesloth/" target="_blank" class="fab fa-instagram" id="instagram"></a>
+            <a href="https://open.spotify.com/user/31kmjiy5kpva6pqhsqlc7fxc4mmi?si=980c558f44044cad" target="_blank" class="fab fa-spotify" id="spotify"></a>
+            <a href="https://gitlab.com/fesloth" target="_blank" class="fab fa-gitlab" id="gitlab"></a>
           </div>
-          <a href="dashboard.html" class="to-dashboard">Get know me more</a>
+          <a href="#" class="to-dashboard">Get know me more</a>
         </section>
+        <!-- home -->
         <div class="content">
           <section class="content-card home" id="welcome-section">
-            <h1>Hello Anonim!</h1>
-            <h2>Welcome to my profile.</h2>
+            <h1 class="typing-animation">Hello Anonim!</h1>
+            <h2>Welcome to my Portfolio.</h2>
           </section>
-          <section class="content-card about" id="about">
+          <!-- about me -->
+          <section class="content-card about" id="about" style="margin-bottom: 50px;">
             <h1>About me</h1>
             <div class="about-item about-me">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis non dolore facere reiciendis iusto nemo tempore laboriosam laborum fugit dolorum totam incidunt tempora laudantium obcaecati natus sit, aspernatur consectetur! Voluptates?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur quos fugiat fugit! Officiis, temporibus.</p>
+              <p>My name is Syahla Nur Azizah, I'm a Backend Developer Enthusiast.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eos reiciendis dolorem excepturi, reprehenderit sapiente velit laudantium cupiditate alias fugit ullam, iusto adipisci esse hic autem sunt ex quis at similique quos ratione, dolores labore! Maxime debitis itaque voluptas odit?</p>
             </div>
-            <div class="col-2">
               <div class="about-item skills">
                 <h1>Skills</h1>
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">PHP</span>
-                <span class="skill">Ruby</span>
-              </div>
-              <div class="about-item languages">
-                <h1>Languages</h1>
-                <div class="language">
-                  <p>indonesian</p>
-                  <span class="bar"><span class="polish"></span></span>
+                <div class="image">
+                  <img src="assets/html.png" width="80" />
+                  <img src="assets/css.png" width="80" />
+                  <img src="assets/js.png" width="70" />
+                  <img src="assets/php.png" width="80" />
+                  <img src="assets/bootstrap.jpg" width="70" /> 
+                  <img src="assets/nodejs.png" width="120" />
+                  <img src="assets/expressjs.webp" width="120" />
+                  <img src="assets/react.png" width="80" />
+                  <img src="assets/laravel.png" width="80" />
+                  <img src="assets/mysql.png" width="80" />
+                  <img src="assets/mongod.jpg" width="80" />
+                  <img src="assets/postgresql.png" width="70" />
                 </div>
-                <div class="language">
-                  <p>english</p>
-                  <span class="bar"><span class="english"></span></span>
-                </div>
-                <div class="language">
-                  <p>japanese</p>
-                  <span class="bar"><span class="french"></span></span>
-                </div>
-              </div>
-            </div>
           </section>
           <!--=============== PROJECTS ===============-->
           <section class="content-card projects" id="projects">
             <h1>Projects</h1>
-            <div class="col-2 project-list">
+            <div class="project-list">
               <div class="project-tile">
-                <img src="assets/form-login.png" alt="" />
+                <img src="assets/nodejs.png" />
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Project 1</h3>
-                    <p>form login dengan PHP</p>
+                    <h3>SOON</h3>
+                    <p>Website berbasis CRUD dengan nodejs dan expressjs</p>
+                    <div class="buttons">
+                      <a href="#" target="_blank" class="button">Visit Github</a>
+                      <a href="#" class="button">Visit Web</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="project-tile">
-                <img src="assets/Calculator.png" />
+              <div class="project-tile" style="background-color: rgb(45, 77, 112);">
+                <img src="assets/projek/Calculator.png"/>
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Project 2</h3>
+                    <h3>Calculator</h3>
                     <p>Kalkulator sederhana dengan Javascript</p>
+                    <div class="buttons">
+                      <a href="https://github.com/fesloth/calculator-with-js" target="_blank" class="button">Visit Github</a>
+                      <a href="https://fesloth.github.io/calculator-with-js" class="button">Visit Web</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="project-tile">
-                <img src="assets/card-twt.png" />
+              <div class="project-tile" style="background-color: rgba(215, 179, 221, 0.81);">
+                <img src="assets/projek/tictactoe.png" />
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Project 3</h3>
-                    <p>Blog Twitter untuk mencari moots dengan Bootstrap v5</p>
+                    <h3>Game Tic Tac Toe</h3>
+                    <p>Game Tic Tac Toe yang bisa dimainkan berpasangan!</p>
+                    <div class="buttons">
+                      <a href="https://github.com/fesloth/Tic-Tac-Toe" target="_blank" class="button">Visit Github</a>
+                      <a href="https://fesloth.github.io/Tic-Tac-Toe" class="button">Visit Web</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="project-tile">
-                <img src="assets/tictactoe.png" alt="" />
+              <div class="project-tile" style="display: flex;
+              justify-content: center;
+              align-items: center;">
+                <img src="assets/todo-list.png" style="display: block;
+                margin: 0 auto;"/>
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Project 4</h3>
-                    <p>Game Tic-Tac-Toe sedehana dengan Javacript</p>
+                    <h3>Todo-List</h3>
+                    <p>Aplikasi website todo-list dan jadwal pembelajaran dilengkapi dengan timer</p>
+                    <div class="buttons">
+                      <a href="https://github.com/fesloth/TodoList" target="_blank" class="button">Visit Github</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a href="https://github.com/fesloth">see more...</a>
+            <a href="https://github.com/fesloth" id="see">see more...</a>
           </section>
-          <!--=============== EXPERIENCE ===============-->
-          <section class="content-card experience" id="experience">
+          <!-- sertification -->
+          <section class="content-card projects" id="sertif">
+            <h1>Certification</h1>
+            <div class="project-list">
+              <div class="project-tile">
+                <img src="assets/sertifikat/Sertifikat-Javascript_page-0001.jpg" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>Javascript</h3>
+                    <p>Sertifikat Belajar Javascript dari Always Ngoding</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="assets/sertifikat/Sertifikat-Git_page-0001.jpg" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>GIT</h3>
+                    <p>Sertifikat penyelesaian materi pembelajaran fundamental GIT di progate</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="assets/sertifikat/Sertifikat-CMD_page-0001.jpg" />
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>CMD</h3>
+                    <p>Sertifikat penyelesaian materi pembelajaran fundamental Command Line di progate</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <img src="assets/sertifikat/Sertifikat-MongoDB_page-0001.jpg">
+                <div class="overlay">
+                  <div class="project-description">
+                    <h3>MongoDB</h3>
+                    <p>Sertifikat penyelesaian materi pembelajaran MongoDB di codepolitan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+           <!--=============== EXPERIENCE ===============-->
+           <section class="content-card experience" id="experience">
             <h1>Pengalaman</h1>
             <div class="timeline">
               <div class="timeline-items">
@@ -144,17 +199,15 @@
               </div>
             </div>
           </section>
+          <!-- contact -->
           <section class="content-card contact" id="contact">
             <h1>Contact</h1>
             <form class="form" id="form" action="https://t.me/skmrts">
               <div class="input-box">
-                <input type="text" class="text-input" name="name" placeholder="Name" />
+                <input type="text" class="text-input" name="name" placeholder="Name" required/>
               </div>
               <div class="input-box">
-                <input type="email" class="text-input" name="email" id="email" placeholder="Email" />
-              </div>
-              <div class="input-box">
-                <input type="subject" class="text-input" name="subject" id="subject" placeholder="Subject" />
+                <input type="email" class="text-input" name="email" id="email" placeholder="Email" required/>
               </div>
               <div class="input-box">
                 <textarea name="text" class="message" placeholder="Message..."></textarea>
@@ -167,5 +220,6 @@
         </div>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>
