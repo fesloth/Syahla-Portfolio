@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <!-- SweetAlert link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   </head>
@@ -113,7 +115,7 @@
               <div class="project-tile" style="display: flex;
               justify-content: center;
               align-items: center;">
-                <img src="assets/todo-list.png" style="display: block;
+                <img src="assets/projek/todo-list.png" style="display: block;
                 margin: 0 auto;"/>
                 <div class="overlay">
                   <div class="project-description">
@@ -202,7 +204,7 @@
           <!-- contact -->
           <section class="content-card contact" id="contact">
             <h1>Contact</h1>
-            <form class="form" id="form" action="https://t.me/skmrts">
+            <form name="portfolio-form" class="form" action="">
               <div class="input-box">
                 <input type="text" class="text-input" name="name" placeholder="Name" required/>
               </div>
@@ -210,7 +212,7 @@
                 <input type="email" class="text-input" name="email" id="email" placeholder="Email" required/>
               </div>
               <div class="input-box">
-                <textarea name="text" class="message" placeholder="Message..."></textarea>
+                <textarea id="message" name="message" class="message" placeholder="Message..."></textarea>
               </div>
               <div class="input-box">
                 <input type="submit" class="submit-btn" id="submit" value="submit" />
@@ -221,5 +223,35 @@
       </div>
     </div>
     <script src="script/script.js"></script>
+    <!-- contact form -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx3CoAdQg_vAiF72_Lr1zNqaWCrYytoEgSEHomI3h3ewOQRSDZeqFwNGo3XI2DxkNOpaw/exec'
+      const form = document.forms['portfolio-form']
+    
+      form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => swal({
+      title: "Berhasil!",
+      text: "Pesan Anda akan segera disampaikan secepatnya!",
+      icon: "success",
+      button: "OK",
+    }).then(function () {
+      form.submit();
+    }))
+    .catch(error => {
+      swal({
+        title: "Error!",
+        text: "Data gagal dikirimkan",
+        icon: "error",
+        button: "OK",
+      });
+      document.querySelector("#message").value = "";
+      return;
+    });
+});
+
+
+    </script>
   </body>
 </html>
