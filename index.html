@@ -50,7 +50,7 @@
             <h1>About me</h1>
             <div class="about-item about-me">
               <p>My name is Syahla Nur Azizah, I'm a Backend Developer Enthusiast.</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eos reiciendis dolorem excepturi, reprehenderit sapiente velit laudantium cupiditate alias fugit ullam, iusto adipisci esse hic autem sunt ex quis at similique quos ratione, dolores labore! Maxime debitis itaque voluptas odit?</p>
+              <p> I am highly interested in web and application development. Specifically, I find great enjoyment in delving into server-side development and tackling the logical challenges of building robust and efficient applications. That's why I am particularly drawn to the role of a backend developer.</p>
             </div>
               <div class="about-item skills">
                 <h1>Skills</h1>
@@ -225,33 +225,18 @@
     <script src="script/script.js"></script>
     <!-- contact form -->
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbx3CoAdQg_vAiF72_Lr1zNqaWCrYytoEgSEHomI3h3ewOQRSDZeqFwNGo3XI2DxkNOpaw/exec'
-      const form = document.forms['portfolio-form']
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx3CoAdQg_vAiF72_Lr1zNqaWCrYytoEgSEHomI3h3ewOQRSDZeqFwNGo3XI2DxkNOpaw/exec';
+      const form = document.forms['portfolio-form'];
     
       form.addEventListener('submit', e => {
-  e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => swal({
-      title: "Berhasil!",
-      text: "Pesan Anda akan segera disampaikan secepatnya!",
-      icon: "success",
-      button: "OK",
-    }).then(function () {
-      form.submit();
-    }))
-    .catch(error => {
-      swal({
-        title: "Error!",
-        text: "Data gagal dikirimkan",
-        icon: "error",
-        button: "OK",
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            alert("Berhasil! Pesan Anda akan segera disampaikan secepatnya!");
+            form.submit();
+          })
+          .catch(error => console.error('Error!', error.message))
       });
-      document.querySelector("#message").value = "";
-      return;
-    });
-});
-
-
-    </script>
+    </script>    
   </body>
 </html>
