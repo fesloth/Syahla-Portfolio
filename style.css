@@ -569,11 +569,29 @@ textarea {
 
 /*=============== MEDIA QUERY ===============*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
     scroll-behavior: smooth;
   }
 
+  .project-description p {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 2px 14px;
+  }
+
+  .project-description {
+    padding: 5px;
+  }
+
+  .project-description h3 {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
   .container {
     height: auto;
     flex-direction: column;
@@ -632,6 +650,27 @@ textarea {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .project-description p {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 2px 14px;
+  }
+
+  .project-description {
+    padding: 5px;
+  }
+
+  .project-description h3 {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .col-2 {
     grid-template-columns: 1fr;
@@ -643,6 +682,25 @@ textarea {
 
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .project-description p {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 2px 14px;
+  }
+
+  .project-description {
+    padding: 5px;
+  }
+
+  .project-description h3 {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 4px 12px;
+    font-size: 13px;
   }
 
   @media screen and (max-width: 400px) {
@@ -704,5 +762,24 @@ textarea {
 
   .menu-icon:hover {
     color: #4d378a;
+  }
+
+  .project-description p {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 2px 14px;
+  }
+
+  .project-description {
+    padding: 5px;
+  }
+
+  .project-description h3 {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 4px 12px;
+    font-size: 13px;
   }
 }

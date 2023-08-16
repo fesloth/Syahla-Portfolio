@@ -99,15 +99,15 @@
                   </div>
                 </div>
               </div>
-              <div class="project-tile" style="background-color: rgba(215, 179, 221, 0.81);">
-                <img src="assets/projek/tictactoe.png" />
+              <div class="project-tile" style="background-color: rgba(94, 108, 133, 0.81);">
+                <img src="assets/projek/game.png" />
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Game Tic Tac Toe</h3>
-                    <p>Game Tic Tac Toe yang bisa dimainkan berpasangan!</p>
+                    <h3>Kumpulan Game dengan Javascript</h3>
+                    <p>Ada 6 jenis game yang bisa dimainkan!</p>
                     <div class="buttons">
-                      <a href="https://github.com/fesloth/Tic-Tac-Toe" target="_blank" class="button">Visit Github</a>
-                      <a href="https://syahla-tictactoe.vercel.app" class="button">Visit Web</a>
+                      <a href="https://github.com/fesloth/Minigames" target="_blank" class="button">Visit Github</a>
+                      <a href="https://syahlaminigames.vercel.app" class="button">Visit Web</a>
                     </div>
                   </div>
                 </div>
@@ -227,16 +227,17 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbx3CoAdQg_vAiF72_Lr1zNqaWCrYytoEgSEHomI3h3ewOQRSDZeqFwNGo3XI2DxkNOpaw/exec';
       const form = document.forms['portfolio-form'];
-    
       form.addEventListener('submit', e => {
         e.preventDefault();
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response => {
             alert("Berhasil! Pesan Anda akan segera disampaikan secepatnya!");
-            form.submit();
+            console.log('Success', response);
+            form.reset(); 
           })
-          .catch(error => console.error('Error!', error.message))
+          .catch(error => console.error('Error!', error.message)); 
       });
-    </script>    
+    </script>
+      
   </body>
 </html>
